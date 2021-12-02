@@ -20,9 +20,9 @@ const ENABLE_TESTNET = process.env.REACT_APP_ENABLE_TESTNET === 'true';
 // determines if forks should be shown
 const FORK_ENABLED = localStorage.getItem('forkEnabled') === 'true';
 // specifies which network was forked
-const FORK_BASE_CHAIN_ID = Number(localStorage.getItem('forkBaseChainId') || 250);
+const FORK_BASE_CHAIN_ID = Number(localStorage.getItem('forkBaseChainId') || 1);
 // specifies on which chainId the fork is running
-const FORK_CHAIN_ID = Number(localStorage.getItem('forkChainId') || 250);
+const FORK_CHAIN_ID = Number(localStorage.getItem('forkChainId') || 3030);
 const FORK_RPC_URL = localStorage.getItem('forkRPCUrl') || 'http://127.0.0.1:8545';
 const FORK_WS_RPC_URL = localStorage.getItem('forkWsRPCUrl') || 'ws://127.0.0.1:8545';
 

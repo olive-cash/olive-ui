@@ -12,6 +12,7 @@ export enum CustomMarket {
   amm_kovan = 'amm_kovan',
   amm_mainnet = 'amm_mainnet',
   proto_fuji = 'proto_fuji',
+  proto_fantom = 'proto_fantom',
 }
 
 export const marketsData: { [key in keyof typeof CustomMarket]: MarketDataType } = {
@@ -142,6 +143,23 @@ export const marketsData: { [key in keyof typeof CustomMarket]: MarketDataType }
       LENDING_POOL: '0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C',
       WETH_GATEWAY: '0x8a47F74d1eE0e2edEB4F3A7e64EF3bD8e11D27C8',
       SWAP_COLLATERAL_ADAPTER: '0x2EcF2a2e74B19Aab2a62312167aFF4B78E93B6C5',
+    },
+  },
+  [CustomMarket.proto_fantom]: {
+    chainId: ChainId.fantom,
+    logo: logos.aaveLogo,
+    activeLogo: logos.aaveActiveLogo,
+    subLogo: logos.polygon,
+    aTokenPrefix: 'AM',
+    enabledFeatures: {
+      liquiditySwap: true,
+      incentives: true,
+    },
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '0x6c793c628Fe2b480c5e6FB7957dDa4b9291F9c9b'.toLowerCase(),
+      LENDING_POOL: '0x9FAD24f572045c7869117160A571B2e50b10d068',
+      WETH_GATEWAY: '0x47102245FEa0F8D35a6b28E54505e9FfD83d0704',
+      SWAP_COLLATERAL_ADAPTER: '0x35784a624D4FfBC3594f4d16fA3801FeF063241c', // TODO: ???
     },
   },
 } as const;

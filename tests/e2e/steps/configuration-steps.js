@@ -36,6 +36,13 @@ const TENDERLY_SETUP_OPTIONS_AVALANCHE_MAINNET = {
   currencySymbol: 'AVAX',
 };
 
+const TENDERLY_SETUP_OPTIONS_FANTOM_MAINNET = {
+  forkNetworkID: '250',
+  chainID: '3030',
+  networkName: 'tenderly_fantom',
+  currencySymbol: 'FTM',
+};
+
 const DEFAULT_TEST_ACCOUNT = {
   privateKey: '54c6ae44611f38e662093c9a3f4b26c3bf13f5b8adb02da1a76f321bd18efe92',
   address: '0x56FB278a7191bdf7C5d493765Fec03E6EAdF72f1',
@@ -106,6 +113,12 @@ let configAave = (market, forkNetworkID = null, forkRPCUrl = null) => {
         page.doSetupLocalStorage(
           'forkBaseChainId',
           TENDERLY_SETUP_OPTIONS_AVALANCHE_MAINNET.forkNetworkID
+        );
+        break;
+      case constants.markets.fantom:
+        page.doSetupLocalStorage(
+          'forkBaseChainId',
+          TENDERLY_SETUP_OPTIONS_FANTOM_MAINNET.forkNetworkID
         );
         break;
     }
@@ -180,6 +193,14 @@ module.exports.configTestWithTenderlyAvalancheFork = (account = DEFAULT_TEST_ACC
   configEnvWithTenderly({
     setupOptions: TENDERLY_SETUP_OPTIONS_AVALANCHE_MAINNET,
     market: constants.markets.avalancheFork,
+    account: account,
+  });
+};
+
+module.exports.configTestWithTenderlyFantom = (account = DEFAULT_TEST_ACCOUNT) => {
+  configEnvWithTenderly({
+    setupOptions: TENDERLY_SETUP_OPTIONS_FANTOM_MAINNET,
+    market: constants.markets.fantom,
     account: account,
   });
 };

@@ -7,7 +7,8 @@
     "polygon": "polygon",
     "polygonFork": "polygon-fork",
     "aaveV2Kovan": "aaveV2-kovan",
-    "avalancheFork": "avalanche-fork"
+    "avalancheFork": "avalanche-fork",
+    "fantom": "fantom"
   },
   "networks": {
     "CustomRPC": "Custom RPC",
