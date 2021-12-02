@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Switch, Route } from 'react-router-dom';
-import { PERMISSION } from '@aave/contract-helpers';
+import { PERMISSION } from '@olive-dev/contract-helpers';
 
 import DepositAmount from '../DepositAmount';
 import DepositConfirmation from '../DepositConfirmation';

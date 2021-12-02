@@ -14,7 +14,7 @@ import messages from './messages';
 import staticStyles from './style';
 import { isFeatureEnabled } from '../../../../helpers/config/markets-and-network-config';
 import PermissionWarning from '../../../../ui-config/branding/PermissionWarning';
-import { PERMISSION } from '@aave/contract-helpers';
+import { PERMISSION } from '@olive-dev/contract-helpers';
 
 export default function RepayMain() {
   const intl = useIntl();

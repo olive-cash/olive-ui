@@ -23,7 +23,7 @@ import { isAssetStable } from '../../../../helpers/config/assets-config';
 
 import defaultMessages from '../../../../defaultMessages';
 import messages from './messages';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 interface QueryParams {
   fromAsset?: string;

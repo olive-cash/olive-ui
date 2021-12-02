@@ -14,7 +14,7 @@ import ConnectButton from '../../ConnectButton';
 
 import messages from './messages';
 import staticStyles from './style';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 interface BasicFormProps {
   title?: string;

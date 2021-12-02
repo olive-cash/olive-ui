@@ -24,7 +24,7 @@ import messages from './messages';
 import staticStyles from './style';
 
 import * as icons from './images';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 export interface Wallet {
   title: string;

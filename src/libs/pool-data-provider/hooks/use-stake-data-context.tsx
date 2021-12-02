@@ -23,7 +23,7 @@ import {
 import { useApolloConfigContext } from '../../apollo-config';
 import { StakeConfig } from '../../../ui-config';
 import { getProvider } from '../../../helpers/config/markets-and-network-config';
-import { ChainId, StakingService } from '@aave/contract-helpers';
+import { ChainId, StakingService } from '@olive-dev/contract-helpers';
 
 export function computeStakeData(data: StakeData): ComputedStakeData {
   return {

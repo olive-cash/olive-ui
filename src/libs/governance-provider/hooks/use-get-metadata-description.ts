@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import fm from 'front-matter';
 import { IpfsMeta, IpfsPropsal } from '../types';
-import { getProposalMetadata } from '@aave/contract-helpers';
+import { getProposalMetadata } from '@olive-dev/contract-helpers';
 import { IPFS_ENDPOINT } from '../helper';
 
 const useGetMetadataDescription = (idHash: string, skip: boolean) => {

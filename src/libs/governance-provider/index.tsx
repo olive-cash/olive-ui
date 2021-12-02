@@ -18,7 +18,7 @@ import {
   ChainId,
   AaveGovernanceService,
   GovernancePowerDelegationTokenService,
-} from '@aave/contract-helpers';
+} from '@olive-dev/contract-helpers';
 import { useProtocolDataContext } from '../protocol-data-provider';
 import { IPFS_ENDPOINT } from './helper';
 

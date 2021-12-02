@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { tEthereumAddress } from '@aave/protocol-js';
 import { useStateLoading, LOADING_STATE } from '../../hooks/use-state-loading';
-import { AaveGovernanceService } from '@aave/contract-helpers';
+import { AaveGovernanceService } from '@olive-dev/contract-helpers';
 
 export function useVotingPowerLoader(
   startBlock: number | undefined,

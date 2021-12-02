@@ -16,7 +16,7 @@ import {
   ChainId,
   getProposalMetadata,
   Proposal,
-} from '@aave/contract-helpers';
+} from '@olive-dev/contract-helpers';
 
 const MemorizeStartTimestamp: { [id: string]: number } = {};
 const MemorizeProposalTimestamp: { [id: string]: number } = {};

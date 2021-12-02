@@ -1,4 +1,4 @@
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 import { MarketDataType } from '../../helpers/config/types';
 
 import * as logos from './images';

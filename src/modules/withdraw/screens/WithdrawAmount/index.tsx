@@ -13,7 +13,7 @@ import { useTxBuilderContext } from '../../../../libs/tx-provider';
 import defaultMessages from '../../../../defaultMessages';
 import messages from './messages';
 import PermissionWarning from '../../../../ui-config/branding/PermissionWarning';
-import { PERMISSION } from '@aave/contract-helpers';
+import { PERMISSION } from '@olive-dev/contract-helpers';
 
 function WithdrawAmount({
   currencySymbol,

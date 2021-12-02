@@ -2,9 +2,31 @@ import { API_ETH_MOCK_ADDRESS } from '@aave/protocol-js';
 import { BaseNetworkConfig } from '../helpers/config/types';
 import polygonBridgeLogo from './branding/images/polygonLogo.svg';
 import avalancheBridgeLogo from './branding/images/avalancheLogo.svg';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
+  [ChainId.fantom]: {
+    name: 'FANTOM',
+    publicJsonRPCUrl: ['https://eth-kovan.alchemyapi.io/v2/demo', 'https://kovan.poa.network'],
+    addresses: {
+      walletBalanceProvider: '0x07DC923859b68e9399d787bf52c4Aa9eBe3490aF',
+      uiPoolDataProvider: '0x6062ad399E47BF75AEa0b3c5BE7077c1E8664Dcb',
+      uiIncentiveDataProvider: '0x9842E5B7b7C6cEDfB1952a388e050582Ff95645b',
+      chainlinkFeedRegistry: '0xAa7F6f7f507457a1EE157fE97F6c7DB2BEec5cD0',
+    },
+    protocolDataUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v2-kovan',
+    baseUniswapAdapter: '0xf86Be05f535EC2d217E4c6116B3fa147ee5C05A1',
+    baseAsset: 'ETH',
+    baseAssetWrappedAddress: '0xd0a1e359811322d97991e03f863a0c30c2cf029c',
+    // incentives hardcoded information
+    rewardTokenSymbol: 'stkAAVE',
+    rewardTokenAddress: '0xb597cd8d3217ea6477232f9217fa70837ff667af',
+    rewardTokenDecimals: 18,
+    incentivePrecision: 18,
+    explorerLink: 'https://kovan.etherscan.com',
+    rpcOnly: true,
+    isTestnet: true,
+  },
   [ChainId.kovan]: {
     name: 'Kovan',
     publicJsonRPCUrl: ['https://eth-kovan.alchemyapi.io/v2/demo', 'https://kovan.poa.network'],

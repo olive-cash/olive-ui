@@ -4,7 +4,7 @@ import { normalize } from '@aave/protocol-js';
 import { WalletBalanceProviderFactory } from '../contracts/WalletBalanceProviderContract';
 import { useProtocolDataContext } from '../../protocol-data-provider';
 import { getNetworkConfig, getProvider } from '../../../helpers/config/markets-and-network-config';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 interface AddressBalance {
   [key: string]: string;

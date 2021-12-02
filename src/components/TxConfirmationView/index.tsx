@@ -31,7 +31,7 @@ import NetworkMismatch from './NetworkMismatch';
 
 import messages from './messages';
 import staticStyles from './style';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 export interface TxConfirmationViewProps {
   caption?: string;

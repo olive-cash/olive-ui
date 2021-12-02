@@ -21,7 +21,7 @@ import { calculateHFAfterSwap } from '../../helpers';
 import defaultMessages from '../../../../defaultMessages';
 import messages from './messages';
 import { getAtokenInfo } from '../../../../helpers/get-atoken-info';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 interface QueryParams {
   fromAsset?: string;

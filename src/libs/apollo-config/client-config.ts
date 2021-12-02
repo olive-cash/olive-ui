@@ -21,7 +21,7 @@ import {
   WsErrorCountKey,
 } from '../pool-data-provider/hooks/use-graph-check';
 import { governanceConfig } from '../../ui-config';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 enum WsConnectonStatusKey {
   wsNetworkConnectonStatusKey = 'networkIsDisconnected',

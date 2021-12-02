@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { PermissionManager, PERMISSION } from '@aave/contract-helpers';
+import { PermissionManager, PERMISSION } from '@olive-dev/contract-helpers';
 
 import { useProtocolDataContext } from '../protocol-data-provider';
 import { useUserWalletDataContext } from '../web3-data-provider';

@@ -4,7 +4,7 @@ import TxConfirmationView, {
   TxConfirmationViewProps,
 } from '../../../../components/TxConfirmationView';
 import { useStakeDataContext } from '../../../../libs/pool-data-provider/hooks/use-stake-data-context';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 type StakeTxConfirmationViewProps = Omit<TxConfirmationViewProps, 'txChainId' | 'allowedChainIds'>;
 

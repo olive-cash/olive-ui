@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Vote } from '../types';
 import { useStateLoading, LOADING_STATE } from '../../hooks/use-state-loading';
-import { AaveGovernanceService } from '@aave/contract-helpers';
+import { AaveGovernanceService } from '@olive-dev/contract-helpers';
 import { usePolling } from '../../hooks/use-polling';
 
 const INTERVAL_POOL = 60000; // 1 min

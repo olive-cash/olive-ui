@@ -1,6 +1,6 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import { PERMISSION } from '@aave/contract-helpers';
+import { PERMISSION } from '@olive-dev/contract-helpers';
 
 import { usePermissions } from '../../../libs/use-permissions/usePermissions';
 import ScreenWrapper from '../../../components/wrappers/ScreenWrapper';

@@ -2,7 +2,7 @@ import {
   Denominations,
   IncentivesController,
   IncentivesControllerInterface,
-} from '@aave/contract-helpers';
+} from '@olive-dev/contract-helpers';
 import {
   calculateAllUserIncentives,
   calculateAllReserveIncentives,

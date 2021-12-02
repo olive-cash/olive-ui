@@ -5,7 +5,7 @@ import { ReserveData, UserReserveData } from '@aave/protocol-js';
 
 import { IUiPoolDataProviderFactory } from '../contracts/IUiPoolDataProviderFactory';
 import { getProvider } from '../../../helpers/config/markets-and-network-config';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 
 // interval in which the rpc data is refreshed
 const POOLING_INTERVAL = 30 * 1000;

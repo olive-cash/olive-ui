@@ -5,7 +5,7 @@ import {
   ReservesDataHumanized,
   UserReserveDataHumanized,
   ChainId,
-} from '@aave/contract-helpers';
+} from '@olive-dev/contract-helpers';
 import { usePolling } from '../../hooks/use-polling';
 import { getProvider } from '../../../helpers/config/markets-and-network-config';
 

@@ -7,9 +7,9 @@ import { useCachedProtocolData } from '../../caching-server-data-provider/hooks/
 import { useApolloConfigContext } from '../../apollo-config';
 import { ConnectionMode, useConnectionStatusContext } from '../../connection-status-provider';
 import { assetsOrder } from '../../../ui-config/assets';
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from '@olive-dev/contract-helpers';
 import { usePoolData } from '../hooks/use-pool-data';
-import { ReserveDataHumanized, UserReserveDataHumanized } from '@aave/contract-helpers';
+import { ReserveDataHumanized, UserReserveDataHumanized } from '@olive-dev/contract-helpers';
 import { normalize } from '@aave/math-utils';
 
 /**

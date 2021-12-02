@@ -3,7 +3,7 @@ import { normalize, valueToBigNumber, tEthereumAddress } from '@aave/protocol-js
 
 import { useStateLoading, LOADING_STATE } from '../../hooks/use-state-loading';
 import { GovernanceConfig } from '../../../ui-config';
-import { AaveGovernanceService } from '@aave/contract-helpers';
+import { AaveGovernanceService } from '@olive-dev/contract-helpers';
 
 interface PowersState {
   votingPower: string;
